@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { new-image } from "@/components/ui/new-image";
+import article1 from "../../public/images/article1.jpg";
+import article2 from "../../public/images/article2.jpg";
+import article3 from "../../public/images/article3.jpg";
 
 const Index = () => {
   return (
@@ -15,7 +17,7 @@ const Index = () => {
         <h2 className="text-2xl font-semibold">Featured Articles</h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           <Card>
-            <new-image path="/images/article1.jpg" instructions="Create an image of a UFO sighting in a city." />
+            <img src={article1} alt="UFO sighting in a city" />
             <CardHeader>
               <CardTitle>UFO Spotted Over New York City</CardTitle>
             </CardHeader>
@@ -24,7 +26,7 @@ const Index = () => {
             </CardContent>
           </Card>
           <Card>
-            <new-image path="/images/article2.jpg" instructions="Create an image of a UFO sighting in a rural area." />
+            <img src={article2} alt="UFO sighting in a rural area" />
             <CardHeader>
               <CardTitle>Strange Lights in the Countryside</CardTitle>
             </CardHeader>
@@ -33,7 +35,7 @@ const Index = () => {
             </CardContent>
           </Card>
           <Card>
-            <new-image path="/images/article3.jpg" instructions="Create an image of a UFO sighting near a mountain." />
+            <img src={article3} alt="UFO sighting near a mountain" />
             <CardHeader>
               <CardTitle>UFO Near the Rocky Mountains</CardTitle>
             </CardHeader>
